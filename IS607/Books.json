@@ -1,0 +1,24 @@
+ [ 
+   { 
+     "Subject": "Data Science", 
+     "Title": "Mathematical Statistics with Resampling and R",  
+     "Authors": "Laura Chihara and Tim Hesterberg", 
+     "Year": 2011, 
+     "Language": "English" 
+   }, 
+   { 
+     "Subject": "Data Science", 
+     "Title": "XML and Web Technologies for Data Science with R",  
+     "Authors": "Deborah Nolan and Duncan Temple Lang", 
+     "Year": 2014, 
+     "Language": "English" 
+   }, 
+   { 
+     "Subject": "Data Science", 
+     "Title": "The Little SAS Book",  
+     "Authors": "Lora D. Delwiche, Susan J. Slaughter", 
+     "Year": 2008, 
+     "Language": "English" 
+   } 
+ ]
+

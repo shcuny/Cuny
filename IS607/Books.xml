@@ -1,0 +1,35 @@
+ <?xml version="1.0" encoding="UTF-8"?> 
+ <mybooks> 
+    <book> 
+       <Subject>Data Science</Subject> 
+       <Title>Mathematical Statistics with Resampling and R</Title>
+       <Authors> 
+          <author>Laura Chihara</author>
+          <author>Tim Hesterberg</author> 
+       </Authors> 
+       <Year>2011</Year> 
+       <Language>English</Language> 
+    </book> 
+    <book> 
+       <Subject>Data Science</Subject> 
+       <Title>XML and Web Technologies for Data Science with R</Title>
+       <Authors> 
+          <author>Deborah Nolan</author>
+          <author>Duncan Temple Lang</author> 
+       </Authors> 
+       <Year>2014</Year> 
+       <Language>English</Language> 
+    </book> 
+    <book> 
+       <Subject>Data Science</Subject> 
+       <Title>Duncan Temple Lang</Title>
+       <Authors> 
+          <author>Lora D. Delwiche</author>
+          <author>Susan J. Slaughter</author> 
+       </Authors> 
+       <Year>2011</Year> 
+       <Language>English</Language> 
+    </book> 
+ </mybooks>
+
+
