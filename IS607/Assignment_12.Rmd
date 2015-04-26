@@ -1,0 +1,61 @@
+---
+title: "IS607 Week 12 Assignment"
+author: "S. Hong"
+date: "Saturday, April 25, 2015"
+output: html_document
+---
+
+#MongoDB
+1. Load json file into mongodb
+2. Load data from a mongodb into R
+
+Create a connection to Mongodb
+```{r}
+library (rmongodb)
+
+mongo <- mongo.create()
+mongo
+```
+
+Get all the databases from your Mongodb connection
+```{r}
+library (rmongodb)
+
+if(mongo.is.connected(mongo) == TRUE) {
+  mongo.get.databases(mongo)
+}
+```
+
+Get all the collections from test in Mongodb
+```{r}
+if(mongo.is.connected(mongo) == TRUE) {
+  db <- "test"
+  mongo.get.database.collections(mongo, db)
+}
+collection <- "test.zipcode"
+```
+
+Get the size of the collection, sample document and values for keys
+```{r}
+if(mongo.is.connected(mongo) == TRUE) {
+  help("mongo.count")
+  mongo.count(mongo, collection)
+}
+```
+
+Retrieve one record from the dataset sourced from Mongodb
+```{r}
+if(mongo.is.connected(mongo) == TRUE) {
+  mongo.find.one(mongo, collection)
+}
+
+```
+
+Convert bison to list
+```{r}
+ds = mongo.find.one(mongo, ns = "test.zipcode")
+ds = mongo.bson.to.list(ds)
+class(ds)
+
+names(ds)
+```
